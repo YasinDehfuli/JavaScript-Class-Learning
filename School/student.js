@@ -1,5 +1,22 @@
 class Student {
-  constructor(studentId, name, fatherName, motherName, familyMemberCount, religion, age, grade, email, phone, address, dateOfBirth, parentContacts, medicalHistory, yearReport, GPA, fieldOfStudy, physicalConditions,) {
+  constructor(studentId,
+              name,
+              fatherName,
+              motherName,
+              familyMemberCount,
+              religion,
+              age,
+              grade,
+              email,
+              phone,
+              address,
+              dateOfBirth,
+              parentContacts,
+              medicalHistory,
+              yearReport,
+              GPA,
+              fieldOfStudy,
+              physicalConditions,) {
     this.studentId = studentId;
     this.name = name;
     this.fatherName = fatherName;

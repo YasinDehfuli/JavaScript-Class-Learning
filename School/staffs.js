@@ -1,5 +1,21 @@
-class staffs {
-  constructor(name, family, fatherName, motherName, count, list, id, subject, yearOfExperience, email, phone, age, marriage, insurance, workingHours, department, role) {
+class Staffs {
+  constructor(name,
+              family,
+              fatherName,
+              motherName,
+              count,
+              list,
+              id,
+              subject,
+              yearOfExperience,
+              email,
+              phone,
+              age,
+              marriage,
+              insurance,
+              workingHours,
+              department,
+              role) {
     this.name = name;
     this.family = family;
     this.fatherName = fatherName;

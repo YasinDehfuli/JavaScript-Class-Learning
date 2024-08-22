@@ -1,5 +1,33 @@
-class vicePrincipalStaff extends staffs {
-  constructor(name, family, fatherName, motherName, count, list, id, subject, yearOfExperience, email, phone, age, marriage, insurance, workingHours, department, role, disciplinaryCases, supervisedClasses, studentAttendance, teacherSupport, schoolEventsCoordination, parentCommunication, safetyAndSecurity, crisisManagement, extracurricularActivities, teacherEvaluation, scheduleManagement, behavioralInterventions) {
+class VicePrincipalStaff extends Staffs {
+  constructor(name,
+              family,
+              fatherName,
+              motherName,
+              count,
+              list,
+              id,
+              subject,
+              yearOfExperience,
+              email,
+              phone,
+              age,
+              marriage,
+              insurance,
+              workingHours,
+              department,
+              role,
+              disciplinaryCases,
+              supervisedClasses,
+              studentAttendance,
+              teacherSupport,
+              schoolEventsCoordination,
+              parentCommunication,
+              safetyAndSecurity,
+              crisisManagement,
+              extracurricularActivities,
+              teacherEvaluation,
+              scheduleManagement,
+              behavioralInterventions) {
     super(name, family, fatherName, motherName, count, list, id, subject, yearOfExperience, email, phone, age, marriage, insurance, workingHours, department, role);
     
     this.disciplinaryCases = disciplinaryCases;

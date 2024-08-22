@@ -1,5 +1,21 @@
 class School {
-  constructor(name, address, street, city, state, postalCode, country, yearFounded, area, type, email, website, budget, motto, investor, numberOfTeachers, numberOfStudents) {
+  constructor(name,
+              address,
+              street,
+              city,
+              state,
+              postalCode,
+              country,
+              yearFounded,
+              area,
+              type,
+              email,
+              website,
+              budget,
+              motto,
+              investor,
+              numberOfTeachers,
+              numberOfStudents) {
     this.name = name;
     this.address = address;
     this.street = street;
