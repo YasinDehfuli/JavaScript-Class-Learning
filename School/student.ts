@@ -1,17 +1,8 @@
-export class Student {
+import {PersonalInfo} from "./personalInfo";
+
+export class Student extends PersonalInfo {
     studentId: number;
-    name: string;
-    fatherName: string;
-    motherName: string;
-    familyMemberCount: number;
-    religion: string;
-    age: number;
-    grade: string;
-    email: string;
-    phone: string;
-    address: string;
-    dateOfBirth: Date;
-    parentContacts: Record<string, string>;
+    parentContacts: string;
     medicalHistory: string[];
     yearReport: string[];
     GPA: number;
@@ -21,35 +12,26 @@ export class Student {
     constructor(
         studentId: number,
         name: string,
+        family: string,
         fatherName: string,
         motherName: string,
-        familyMemberCount: number,
-        religion: string,
-        age: number,
-        grade: string,
-        email: string,
-        phone: string,
-        address: string,
-        dateOfBirth: Date,
-        parentContacts: Record<string, string>,
+        familyMemberCount: any,
+        religion: any,
+        grade: any,
+        email: any,
+        phone: any,
+        address: any,
+        marriage: boolean,
+        dateOfBirth: number,
+        parentContacts: string,
         medicalHistory: string[],
         yearReport: string[],
         GPA: number,
         fieldOfStudy: string,
         physicalConditions: string[]
     ) {
+        super(name, family, fatherName, motherName, familyMemberCount, religion, dateOfBirth, grade, email, phone, address, marriage)
         this.studentId = studentId;
-        this.name = name;
-        this.fatherName = fatherName;
-        this.motherName = motherName;
-        this.familyMemberCount = familyMemberCount;
-        this.religion = religion;
-        this.age = age;
-        this.grade = grade;
-        this.email = email;
-        this.phone = phone;
-        this.address = address;
-        this.dateOfBirth = dateOfBirth;
         this.parentContacts = parentContacts;
         this.medicalHistory = medicalHistory;
         this.yearReport = yearReport;

@@ -3,7 +3,7 @@ import {Staffs} from "./staffs";
 class VicePrincipalStaff extends Staffs {
     disciplinaryCases: string[];
     supervisedClasses: string[];
-    studentAttendance: Record<string, any>; // Assuming a flexible structure for attendance records
+    studentAttendance: string;
     teacherSupport: string[];
     schoolEventsCoordination: string[];
     parentCommunication: string[];
@@ -19,6 +19,11 @@ class VicePrincipalStaff extends Staffs {
         family: string,
         fatherName: string,
         motherName: string,
+        familyMemberCount: number,
+        religion: string,
+        dateOfBirth: number,
+        grade: string,
+        address: string,
         count: number,
         list: string[],
         id: number,
@@ -26,7 +31,6 @@ class VicePrincipalStaff extends Staffs {
         yearOfExperience: number,
         email: string,
         phone: string,
-        age: number,
         marriage: boolean,
         insurance: boolean,
         workingHours: string,
@@ -34,7 +38,7 @@ class VicePrincipalStaff extends Staffs {
         role: string,
         disciplinaryCases: string[],
         supervisedClasses: string[],
-        studentAttendance: Record<string, any>,
+        studentAttendance: string,
         teacherSupport: string[],
         schoolEventsCoordination: string[],
         parentCommunication: string[],
@@ -50,20 +54,25 @@ class VicePrincipalStaff extends Staffs {
             family,
             fatherName,
             motherName,
+            familyMemberCount,
+            religion,
+            dateOfBirth,
+            grade,
+            email,
+            phone,
+            address,
+            marriage,
             count,
             list,
             id,
             subject,
             yearOfExperience,
-            email,
-            phone,
-            age,
-            marriage,
             insurance,
             workingHours,
             department,
-            role
-        );
+            role,
+        )
+        ;
 
         this.disciplinaryCases = disciplinaryCases;
         this.supervisedClasses = supervisedClasses;

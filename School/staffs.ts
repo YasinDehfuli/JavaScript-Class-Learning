@@ -1,17 +1,11 @@
-export class Staffs {
-    name: string;
-    family: string;
-    fatherName: string;
-    motherName: string;
+import {PersonalInfo} from "./personalInfo";
+
+export class Staffs extends PersonalInfo {
     count: number;
     list: string[];
     id: number;
     subject: string;
     yearOfExperience: number;
-    email: string;
-    phone: string;
-    age: number;
-    marriage: boolean;
     insurance: boolean;
     workingHours: string;
     department: string;
@@ -22,33 +16,41 @@ export class Staffs {
         family: string,
         fatherName: string,
         motherName: string,
+        familyMemberCount: number,
+        religion: string,
+        dateOfBirth: number,
+        grade: string,
+        email: string,
+        phone: string,
+        address: string,
+        marriage: boolean,
         count: number,
         list: string[],
         id: number,
         subject: string,
         yearOfExperience: number,
-        email: string,
-        phone: string,
-        age: number,
-        marriage: boolean,
         insurance: boolean,
         workingHours: string,
         department: string,
         role: string
     ) {
-        this.name = name;
-        this.family = family;
-        this.fatherName = fatherName;
-        this.motherName = motherName;
+        super(name,
+            family,
+            fatherName,
+            motherName,
+            familyMemberCount,
+            religion,
+            dateOfBirth,
+            grade,
+            email,
+            phone,
+            address,
+            marriage)
         this.count = count;
         this.list = list;
         this.id = id;
         this.subject = subject;
         this.yearOfExperience = yearOfExperience;
-        this.email = email;
-        this.phone = phone;
-        this.age = age;
-        this.marriage = marriage;
         this.insurance = insurance;
         this.workingHours = workingHours;
         this.department = department;

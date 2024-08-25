@@ -4,7 +4,7 @@ export class Places {
     location: string;
     capacity: number;
     resources: string[];
-    schedule: Record<string, any>;
+    schedule: string;
     type: string;
     specialFeatures: string[];
     maintenanceStatus: string;
@@ -18,7 +18,7 @@ export class Places {
         location: string,
         capacity: number,
         resources: string[],
-        schedule: Record<string, any>,
+        schedule: string,
         type: string,
         specialFeatures: string[],
         maintenanceStatus: string,
