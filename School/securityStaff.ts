@@ -1,9 +1,10 @@
 import {Staffs} from "./staffs";
 
-class TeacherStaff extends Staffs {
-    public qualifications: string[]
-    public teachingHistory: string[]
-    public performanceReviews: string
+class SecurityStaff extends Staffs {
+    public certifications: string[]
+    public emergencyResponseTraining: boolean
+    public currentStatus: string
+    public incidentReports: string[]
 
     constructor(
         name: string,
@@ -27,9 +28,10 @@ class TeacherStaff extends Staffs {
         workingHours: string,
         department: string,
         role: string,
-        qualifications: string[],
-        teachingHistory: string[],
-        performanceReviews: string,
+        certifications: string[],
+        emergencyResponseTraining: boolean,
+        currentStatus: string,
+        incidentReports: string[],
     ) {
         super(
             name,
@@ -54,8 +56,9 @@ class TeacherStaff extends Staffs {
             department,
             role,
         )
-        this.qualifications = qualifications;
-        this.teachingHistory = teachingHistory;
-        this.performanceReviews = performanceReviews;
+        this.certifications = certifications;
+        this.emergencyResponseTraining = emergencyResponseTraining;
+        this.currentStatus = currentStatus;
+        this.incidentReports = incidentReports;
     }
 }
